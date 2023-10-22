@@ -16,9 +16,9 @@ public class QuestionsData {
     }
     public void quiz1()
     {
-        for(QuizService question:questionsArray)
+        for(int i=0;i<questionsArray.length;i++)
         {
-            System.out.println(question);
+            System.out.println(questionsArray[i]);
         }
         System.out.println(marks);
     }

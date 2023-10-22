@@ -6,7 +6,7 @@ public class QuizService {
      String Options3;
      String Options4;
      String Answer;
-
+    QuestionsData qd = new QuestionsData();
     public QuizService(int qid, String qtitle, String options1, String options2, String options3, String options4, String answer) {
         Qid = qid;
         Qtitle = qtitle;
@@ -36,7 +36,7 @@ public class QuizService {
         System.out.println(Options2);
         System.out.println(Options3);
         System.out.println(Options4);
-        QuestionsData qd = new QuestionsData();
+        System.out.println("Enter Your Answer");
         qd.checkanswer(Qid);
         return "*************************";
     }
